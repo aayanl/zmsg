@@ -22,7 +22,7 @@ func init() {
 
 func readAuthCreds() (string, string, error) {
 	homedir := os.Getenv("HOME")
-	confpath := filepath.Join(homedir, ".zcash/zcash.conf")
+	confpath := filepath.Join(homedir, ".zclassic/zclassic.conf")
 	fi, err := os.Open(confpath)
 	if err != nil {
 		return "", "", err
